@@ -1,34 +1,40 @@
 #  DSA2040A_ET_Exam_-Victor-_-388-  
-*A Complete Data Extraction, Cleaning, Transformation, and Load Pipeline*
+*A Complete ETL (Extract, Transform, Load) Pipeline Implementation for DSA2040A End-Term Exam*  
 
-![GitHub repo size](https://img.shields.io/github/repo-size/VICTOR21-A/DSA2040A_ET_Exam_-Victor-_-388-?color=blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/VICTOR21-A/DSA2040A_ET_Exam_-Victor-_-388-)
-![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-
----
-
-##  Project Overview  
-This repository presents a full **ETL (Extract → Transform → Load)** pipeline implemented in Python and Jupyter Notebooks as part of the End-Term Examination for the course DSA2040A.  
-The project demonstrates how to:
-- Extract raw data from source files  
-- Inspect and validate data (identify issues such as nulls, duplicates, inconsistent types)  
-- Transform and enrich the dataset using a minimum of five operations across at least three different categories (cleaning, standardization, enrichment, structural, filtering, categorization)  
-- Persist the transformed data to structured output files  
-- Provide full documentation and reproducibility of the pipeline  
+![GitHub repo size](https://img.shields.io/github/repo-size/VICTOR21-A/DSA2040A_ET_Exam_-Victor-_-388-?color=blue)  
+![GitHub last commit](https://img.shields.io/github/last-commit/VICTOR21-A/DSA2040A_ET_Exam_-Victor-_-388-)  
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)  
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  
 
 ---
 
-##  Repository Structure  
-```
+##  Overview  
+
+This repository — **DSA2040A_ET_Exam_-Victor-_-388-** — presents a **complete ETL (Extract, Transform, Load)** workflow developed as part of the **DSA2040A End-Term Examination**.  
+
+The project demonstrates practical data engineering skills: **data loading, quality assessment, cleaning, merging, transformation, and enrichment** using Python and Jupyter Notebooks.  
+
+It includes clear, re-runnable notebooks for the **Extract (20 Marks)** and **Transform (30 Marks)** sections, fulfilling all marking criteria.  
+
+---
+
+## Repository Structure  
+
+```bash
 DSA2040A_ET_Exam_-Victor-_-388-/
 │
-├── data.ipynb # Notebook for initial exploration and cleaning
-├── data.py # Python module with reusable ETL functions
-├── etl_extract.ipynb # Notebook for the Extract phase (20 marks)
-├── etl_transform.ipynb # Notebook for the Transform phase (30 marks)
-├── /data/ # Folder for raw and validated data versions
-└── /transformed/ # Folder for final transformed outputs
+├── data/                          # Folder to store raw and validated data
+│   ├── raw/                       # Original unprocessed datasets
+│   └── validated/                 # Cleaned and validated copies
+│
+├── transformed/                   # Folder to store transformed datasets
+│   ├── transformed_full.csv
+│   └── transformed_incremental.csv
+│
+├── etl_extract.ipynb              # Extraction, validation, and documentation stage (20 Marks)
+├── etl_transform.ipynb            # Data transformation stage (30 Marks)
+├── data.py                        # Reusable helper functions for ETL tasks
+└── README.md                      # Project documentation
 ```
 ---
 
